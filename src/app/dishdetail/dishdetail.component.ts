@@ -110,7 +110,7 @@ export class DishdetailComponent implements OnInit {
     console.log(this.com);
     this.dishcopy.comments.push(this.com);
     this.dishcopy.save()
-    .subscribe(dish => {this.dish = dish; console.log(this.dish);});
+    .subscribe(dish => this.dish = dish);
     this.ff.reset({
     rating: 5,
     comment: '',
