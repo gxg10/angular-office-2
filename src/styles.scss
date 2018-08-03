@@ -1,8 +1,5 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-@import 'variables';
-@import '../node_modules/font-awesome/scss/font-awesome';
-
 // some basic resets 
 
 body { 
@@ -36,9 +33,25 @@ $divider-color:        #BDBDBD;
     padding: $pad-up-down $pad-left-right;
 }
 
+
+
+.background-primary {
+    background-color: $background-dark!important;
+  }
+.background-accent {
+    background-color: $accent-color!important;
+  }
+.text-floral-white {
+    color: floralwhite!important;
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
 .highlight {
-	background-color: $background-pale;
-	border: 1px solid $primary-color-dark;
-	z-index: 1;
-	transform: scale(1.01);
+    background-color: $background-pale;
+    border: 1px solid $primary-color-dark;
+    z-index: 1;
+    transform: scale(1.01);
 }
