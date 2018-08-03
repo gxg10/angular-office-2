@@ -11,4 +11,8 @@ import { Restangular } from 'ngx-restangular';
 export class FeedbackService {
 
   constructor(private restangular: Restangular) { }
+
+  submitFeedback(feedback: Feedback): Observable<Feedback[]> {
+  	return this.restangular.all('feedback').post(feedback);
+  }
 }
